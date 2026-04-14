@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 public class PageTest extends BaseTest {
     @Test
     public void testLoginWithInvalidData() throws InterruptedException {
-        Page page = new Page(driver);
+        Page page = new Page();
         page.getUrl().clickEnterBtn().inputEmail("test@test.com").inputPassword("john345nyTest").buttonSubmit();
         String actual = page.getErrorMessage();
         System.out.println("actual: " +actual);

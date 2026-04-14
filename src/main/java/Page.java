@@ -53,7 +53,7 @@ public class Page {
     }
 
 
-    public Page(WebDriver driver) {
-        this.driver = driver;
+    public Page() {
+        this.driver = DriverSingleton.getDriver();
     }
 }
